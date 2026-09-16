@@ -1,0 +1,28 @@
+Source: redmine-plugin-checklists
+Section: ruby
+Priority: optional
+Uploaders: Daniel Pocock <daniel@pocock.pro>
+Maintainer: Debian Ruby Extras Maintainers <pkg-ruby-extras-maintainers@lists.alioth.debian.org>
+Build-Depends: debhelper-compat (= 13),
+               gem2deb,
+               rake
+Standards-Version: 3.9.8
+Vcs-Git: https://github.com/dpocock/redmine-plugin-checklists
+Vcs-Browser: https://github.com/dpocock/redmine-plugin-checklists
+Homepage: https://www.redmine.org/plugins/redmine-plugin-checklists
+Testsuite: autopkgtest-pkg-ruby
+XS-Ruby-Versions: all
+
+Package: redmine-plugin-checklists
+Architecture: all
+XB-Ruby-Versions: ${ruby:Versions}
+Depends: ruby | ruby-interpreter,
+         ${misc:Depends},
+         ${shlibs:Depends},
+         redmine,
+         ruby-redmineup (>= 1.1.12)
+Conflicts: ruby-redmine-crm
+Enhances: redmine
+Description: Checklists plugin for Redmine
+ When breaking an issue down into smaller steps, instead of creating
+ sub-tasks, use a checklist.

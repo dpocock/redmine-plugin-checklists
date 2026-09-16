@@ -1,0 +1,8 @@
+app             /usr/share/redmine/plugins/redmine_checklists
+assets          /usr/share/redmine/plugins/redmine_checklists
+config          /usr/share/redmine/plugins/redmine_checklists
+db              /usr/share/redmine/plugins/redmine_checklists
+lib             /usr/share/redmine/plugins/redmine_checklists
+test            /usr/share/redmine/plugins/redmine_checklists
+Gemfile         /usr/share/redmine/plugins/redmine_checklists
+init.rb         /usr/share/redmine/plugins/redmine_checklists
